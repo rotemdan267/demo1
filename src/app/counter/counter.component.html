@@ -1,0 +1,7 @@
+<button [disabled]="needToDisable" class="btn btn-success" (click)="onCount(+1)">+</button>
+<div>Counter: <span>{{counter}}</span> </div>
+<button class="btn btn-danger" (click)="onCount(-1)">-</button>
+<br>
+<br>
+<br>
+<button class="btn btn-primary" (click)="disableOnOff()">Turn disable on\off</button>

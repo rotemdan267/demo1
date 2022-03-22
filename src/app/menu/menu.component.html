@@ -2,11 +2,8 @@
 
 <ul>
 
-    <li>
-        <a href="{{ links[0].link }}" target="{{links[0].target}}">{{links[0].title}}</a>
-    </li>
-    <li>
-        <a href="{{ links[1].link }}" target="_blank">{{links[1].title}}</a>
+    <li *ngFor="let l of links; let i = index">
+        <a href="{{ l.link }}" target="{{l.target}}"> {{i+1}}. {{l.title}}</a>
     </li>
 
 </ul>

@@ -1,0 +1,17 @@
+
+
+.withMargin{
+
+    margin: 30px;
+}
+
+.largerFont{
+
+    font-size: x-large;
+}
+
+.reverseColor{
+
+    color: white;
+    background-color: black;
+}

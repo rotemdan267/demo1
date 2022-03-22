@@ -12,7 +12,9 @@ export class MenuComponent implements OnInit {
   constructor() {
     this.links = [
       { title: 'Yahoo', link: "https://www.yahoo.com/", target: "_blank"},
-      { title: 'Google', link: "https://www.google.com/", target: "_blank"}
+      { title: 'Google', link: "https://www.google.com/", target: "_blank"},
+      { title: 'Ynet', link: "https://www.ynet.co.il/", target: "_blank"},
+      { title: 'Walla', link: "https://www.walla.co.il/", target: "_blank"}
     ]
    }
 

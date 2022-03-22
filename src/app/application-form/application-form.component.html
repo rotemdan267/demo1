@@ -1,0 +1,25 @@
+
+
+<form #myForm="ngForm" (submit)="getFormValues(myForm.value)">
+
+    <input type="text" ngModel name="firstName" placeholder="First Name">
+    <br>
+    <br>
+    <input type="text" ngModel name="lastName" placeholder="Last Name">
+    <br>
+    <br>
+    <input type="password" ngModel name="password" placeholder="Password">
+    <br>
+    <br>
+    <button>Submit</button>
+
+</form>
+<br>
+<br>
+
+<h2>Form details:</h2>
+<ul>
+    <li>First name: {{obj.firstName}}</li>
+    <li>Last name: {{obj.lastName}}</li>
+    <li>Password: {{obj.password}}</li>
+</ul>

@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import type { User } from '../interfaces/User';
 
+enum Contacts {
+  Email = 'email',
+  Phone = 'phone'
+}
+
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
@@ -8,13 +13,34 @@ import type { User } from '../interfaces/User';
 })
 export class UserDetailsComponent implements OnInit {
 
+  myContactsEnum = Contacts; // ה-enum
+  // לא מוכר בקובץ html
+  // כי הוא מחוץ לקלאס, לכן מכניסים אותו למשתנה
+  // שיכיל אותו
+
   user: User = {
     name: "Rotem",
     email: "rotemdan@gmail.com",
-    birthDate: Date.parse('1992-10-23')
+    birthDate: Date.parse('1992-10-23'),
+    contact: this.myContactsEnum.Phone
   }
 
-  constructor() { }
+  red: string = 'red';
+
+  isItalic: boolean = true;
+
+  calculatedStyle: any = {
+    'font-weight': 'bold',
+    'background-color': 'yellow'
+  };
+
+  haveMargin: boolean = true;
+
+  myClasses: any = {};
+
+  constructor() { 
+    this.determineClasses();
+  }
 
   ngOnInit(): void {
   }
@@ -29,5 +55,13 @@ export class UserDetailsComponent implements OnInit {
     }
     else return 0;
 
+  }
+
+  determineClasses() {
+
+    this.myClasses = {
+      'largerFont': true,
+      'reverseColor': true
+    };
   }
 }

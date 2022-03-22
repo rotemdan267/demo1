@@ -10,6 +10,11 @@ import { CopyrightComponent } from './copyright/copyright.component';
 import { UserAuthModule } from './user-auth/user-auth.module';
 import { SimpleButtonComponent } from './simple-button/simple-button.component';
 import { SomeEventsComponent } from './some-events/some-events.component';
+import { CounterComponent } from './counter/counter.component';
+import { DogOrCatComponent } from './dog-or-cat/dog-or-cat.component';
+import { ApplicationFormComponent } from './application-form/application-form.component';
+import {FormsModule} from '@angular/forms';
+import { StylingComponent } from './styling/styling.component'
 
 @NgModule({
   declarations: [
@@ -18,13 +23,18 @@ import { SomeEventsComponent } from './some-events/some-events.component';
     UserDetailsComponent,
     CopyrightComponent,
     SimpleButtonComponent,
-    SomeEventsComponent
+    SomeEventsComponent,
+    CounterComponent,
+    DogOrCatComponent,
+    ApplicationFormComponent,
+    StylingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    UserAuthModule
+    UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

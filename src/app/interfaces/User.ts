@@ -1,5 +1,6 @@
 export interface User{
     name:string;
     email:string;
-    birthDate:number
+    birthDate:number,
+    contact:string
 }

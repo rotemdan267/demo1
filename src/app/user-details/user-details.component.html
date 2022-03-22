@@ -7,3 +7,60 @@
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
+
+<div [ngSwitch]="user.contact">
+  <h1 *ngSwitchCase="'email'">📧</h1>
+  <h1 *ngSwitchCase="'phone'">📞</h1>
+  <h1 *ngSwitchDefault>🕊️</h1>
+
+</div>
+
+<br><br>
+
+<div>
+
+  <p [style.color]="red">
+    first paragraph first paragraph first paragraph first paragraph first paragraph
+    first paragraph first paragraph first paragraph first paragraph first paragraph
+    first paragraph first paragraph first paragraph
+    first paragraph first paragraph first paragraph first paragraph first paragraph
+    first paragraph
+  </p>
+
+  <p [style.font-style]="isItalic ? 'italic' : 'normal'">
+    second paragraph second paragraph second paragraph second paragraph second paragraph
+    second paragraph second paragraph second paragraph
+    second paragraph second paragraph second paragraph second paragraph second paragraph
+    second paragraph second paragraph second paragraph second paragraph
+    second paragraph second paragraph second paragraph
+  </p>
+
+  <p [ngStyle]="calculatedStyle">
+    third paragraph third paragraph third paragraph third paragraph
+    third paragraph third paragraph third paragraph third paragraph third paragraph third paragraph
+    third paragraph third paragraph third paragraph
+    third paragraph third paragraph third paragraph third paragraph
+    third paragraph third paragraph
+    third paragraph third paragraph third paragraph third paragraph
+  </p>
+
+  <p [class.withMargin]="haveMargin">
+    fourth paragraph fourth paragraph fourth paragraph fourth paragraph
+    fourth paragraph fourth paragraph fourth paragraph
+    fourth paragraph fourth paragraph fourth paragraph fourth paragraph fourth paragraph
+    fourth paragraph fourth paragraph fourth
+    fourth paragraph fourth paragraph fourth paragraph fourth paragraph
+    fourth paragraph fourth paragraph
+  </p>
+
+  <p [ngClass]="myClasses">
+    fifth paragraph fifth paragraph fifth paragraph fifth paragraph fifth paragraph 
+    fifth paragraph fifth paragraph fifth paragraph 
+    fifth paragraph fifth paragraph fifth paragraph fifth paragraph 
+    fifth paragraph fifth paragraph fifth paragraph 
+    fifth paragraph fifth paragraph fifth paragraph fifth paragraph fifth paragraph 
+  </p>
+
+
+
+</div>

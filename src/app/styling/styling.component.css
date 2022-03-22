@@ -1,0 +1,13 @@
+
+/** אם משהו מיוחד
+זה יהיה העיצוב */
+.specialPerson {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: aquamarine;
+}
+
+/* אם משהו יכול להישמר */ 
+.somethingCanSaved {
+    border:5px dotted black;
+}
